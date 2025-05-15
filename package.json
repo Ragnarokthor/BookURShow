@@ -1,15 +1,16 @@
+
 {
   "name": "bookurshow",
   "version": "1.0.0",
   "description": "Book tickets for shows and events",
   "scripts": {
-    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
-    "dev:client": "cd client && npm run dev",
-    "dev:server": "cd server && npm run dev",
-    "build": "npm run build:client",
-    "build:client": "cd client && npm install && npm run build",
-    "postbuild": "echo 'Client build completed'",
-    "start": "cd client && npm start"
+    "install": "npm run install:client && npm run install:server",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "build": "npm run build:client && npm run copy-build",
+    "build:client": "cd client && npm run build",
+    "copy-build": "mkdir -p server/dist && cp -r client/dist/* server/dist/",
+    "start": "cd server && npm start"
   },
   "engines": {
     "node": ">=14.0.0"
