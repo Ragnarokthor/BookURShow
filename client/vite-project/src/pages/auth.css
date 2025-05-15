@@ -1,0 +1,343 @@
+/* Auth Pages Styling */
+:root {
+  --primary-color: #e51937;
+  --primary-dark: #c21730;
+  --secondary-color: #333545;
+  --text-dark: #2c3e50;
+  --text-light: #8795a9;
+  --background-dark: #1f2533;
+  --card-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s ease;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply scroll lock only on auth pages */
+.auth-page {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Main auth container */
+.auth-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--secondary-color);
+}
+
+/* Background elements */
+.auth-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.auth-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(31, 37, 51, 0.85) 0%, rgba(20, 23, 35, 0.95) 100%);
+  z-index: 1;
+}
+
+.auth-pattern {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(229, 25, 55, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(229, 25, 55, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+}
+
+/* Auth Card */
+.auth-card {
+  position: relative;
+  z-index: 5;
+  width: 450px;
+  background: white;
+  border-radius: 20px !important;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  border: none !important;
+}
+
+.auth-card .ant-card-body {
+  padding: 40px !important;
+}
+
+/* Logo */
+.auth-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.auth-logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.logo-book, .logo-show {
+  color: #333545;
+}
+
+.logo-my {
+  color: var(--primary-color);
+}
+
+.auth-logo::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Header */
+.auth-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-title {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+  color: var(--text-dark) !important;
+}
+
+.auth-subtitle {
+  display: block;
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+/* Divider */
+.auth-divider {
+  margin: 24px 0 !important;
+}
+
+.divider-text {
+  font-size: 14px;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+/* Form */
+.auth-form {
+  margin-bottom: 24px;
+}
+
+/* Input Fields */
+.auth-input {
+  border-radius: 12px !important;
+  border: 1px solid #e5e7eb !important;
+  background-color: #f9fafb !important;
+  height: 50px !important;
+  padding: 6px 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  font-size: 16px !important;
+  box-shadow: none !important;
+  transition: var(--transition) !important;
+}
+
+.auth-input:hover,
+.auth-input:focus {
+  border-color: var(--primary-color) !important;
+  background-color: white !important;
+  box-shadow: 0 0 0 3px rgba(229, 25, 55, 0.1) !important;
+}
+
+.input-icon {
+  color: var(--text-light) !important;
+  margin-right: 8px;
+  font-size: 16px !important;
+}
+
+/* Form Options Row */
+.form-options {
+  margin-bottom: 24px;
+}
+
+.remember-checkbox, .terms-checkbox {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.remember-checkbox .ant-checkbox-inner, .terms-checkbox .ant-checkbox-inner {
+  border-color: #d1d5db;
+  border-radius: 4px;
+}
+
+.remember-checkbox .ant-checkbox-checked .ant-checkbox-inner, 
+.terms-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.forgot-link, .terms-link {
+  font-size: 14px;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.forgot-link:hover, .terms-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.terms-container {
+  margin-bottom: 24px;
+}
+
+/* Button */
+.auth-button-container {
+  margin-bottom: 0 !important;
+}
+
+.auth-button {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  height: 50px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(229, 25, 55, 0.25) !important;
+  transition: var(--transition) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-button:hover {
+  background: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(229, 25, 55, 0.35) !important;
+}
+
+.button-arrow {
+  margin-left: 6px;
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.auth-button:hover .button-arrow {
+  transform: translateX(4px);
+}
+
+/* Footer */
+.auth-footer {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.auth-switch-text {
+  font-size: 15px !important;
+  color: var(--text-light) !important;
+}
+
+.auth-switch-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.auth-switch-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Error Messages */
+.ant-form-item-explain-error {
+  font-size: 13px;
+  margin-top: 4px;
+  color: var(--primary-color) !important;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .auth-card {
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .auth-card .ant-card-body {
+    padding: 30px !important;
+  }
+  
+  .auth-title {
+    font-size: 24px !important;
+  }
+  
+  .auth-subtitle {
+    font-size: 14px;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensures modal stays on top */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%; /* Prevents modal from becoming too tall */
+  overflow-y: auto; /* Adds a scrollbar if content overflows */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

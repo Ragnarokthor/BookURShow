@@ -1,0 +1,1 @@
+mongodb+srv://vkaushik1952:kEa8OcH9WvHFZoEh@cluster0.rcfkhoz.mongodb.net/BMS2?retryWrites=true&w=majority&appName=Cluster0

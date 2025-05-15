@@ -1,0 +1,202 @@
+.bookings-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.bookings-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bookings-header h1 {
+  font-size: 24px;
+  color: #1890ff;
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+}
+
+.booking-poster {
+  width: 150px;
+  min-width: 150px;
+}
+
+.booking-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.booking-details {
+  padding: 15px;
+  width: 100%;
+}
+
+.booking-title {
+  margin: 0 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.booking-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.booking-info-item {
+  display: flex;
+}
+
+.info-label {
+  color: #666;
+  font-weight: 500;
+  width: 100px;
+}
+
+.info-value {
+  color: #333;
+}
+
+.booking-id {
+  font-size: 12px;
+  color: #999;
+}
+
+.booking-actions {
+  text-align: right;
+}
+
+.btn-download, 
+.btn-book-now {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.no-bookings {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.no-bookings h2 {
+  margin-bottom: 10px;
+}
+
+/* PDF Ticket Styles */
+.ticket-pdf {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ticket-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.ticket-header {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #1890ff;
+  padding-bottom: 10px;
+}
+
+.ticket-header h1 {
+  margin: 0;
+  color: #1890ff;
+  font-size: 28px;
+}
+
+.ticket-header h2 {
+  margin: 5px 0 0;
+  font-size: 20px;
+}
+
+.ticket-content {
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.ticket-movie-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.ticket-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ticket-info-item {
+  display: flex;
+  border-bottom: 1px dotted #eee;
+  padding-bottom: 5px;
+}
+
+.ticket-label {
+  font-weight: bold;
+  width: 120px;
+}
+
+.ticket-stamp {
+  text-align: center;
+  margin: 20px 0;
+  padding: 5px;
+  border: 2px dashed green;
+  color: green;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.ticket-qr {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ticket-qr img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.ticket-id {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.ticket-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.ticket-terms {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}

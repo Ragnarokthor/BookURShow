@@ -1,0 +1,413 @@
+/* Theatre Management Styles */
+.theatre-admin-container {
+    padding: 24px;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+  }
+  
+  .theatre-admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e6e9f0;
+  }
+  
+  .theatre-admin-title {
+    color: #333;
+    margin: 0 !important;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .theatre-tabs-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .theatre-tabs .ant-tabs-nav {
+    margin-bottom: 20px;
+  }
+  
+  .theatre-tab-label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Theatre List Component */
+  .theatre-list-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .theatre-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .theatre-table-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+  
+  .theatre-table-container {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .theatre-table .ant-table {
+    border-radius: 8px;
+  }
+  
+  .theatre-table .ant-table-thead > tr > th {
+    background-color: #f7f9fc;
+    font-weight: 600;
+    color: #333;
+    padding: 16px;
+  }
+  
+  .theatre-table .ant-table-tbody > tr > td {
+    padding: 16px;
+  }
+  
+  .theatre-table .ant-table-tbody > tr:hover > td {
+    background-color: #f0f7ff;
+  }
+  
+  .theatre-table .ant-pagination {
+    margin-top: 16px;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+  }
+  
+  /* Status Tags */
+  .status-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .status-approved {
+    background-color: #f6ffed;
+    border: 1px solid #b7eb8f;
+    color: #52c41a;
+  }
+  
+  .status-pending {
+    background-color: #fffbe6;
+    border: 1px solid #ffe58f;
+    color: #faad14;
+  }
+  
+  /* Buttons */
+  .add-theatre-button {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    height: 40px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .add-theatre-button:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+  
+  .action-button-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .edit-button {
+    color: #1890ff;
+    border-color: #1890ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    border-radius: 4px;
+  }
+  
+  .delete-button {
+    color: #ff4d4f;
+    border-color: #ff4d4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    border-radius: 4px;
+  }
+  
+  .shows-button {
+    background-color: #52c41a;
+    border-color: #52c41a;
+    color: white;
+    height: 32px;
+    border-radius: 4px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .shows-button:hover {
+    background-color: #73d13d;
+    border-color: #73d13d;
+  }
+  
+  /* Theatre Form Modal */
+  .theatre-form-modal .ant-modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .theatre-form-modal .ant-modal-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .theatre-form-modal .ant-modal-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .theatre-form-modal .ant-modal-body {
+    padding: 24px;
+  }
+  
+  .theatre-form {
+    padding: 0;
+  }
+  
+  .theatre-form-item {
+    margin-bottom: 20px;
+  }
+  
+  .theatre-input, .theatre-textarea {
+    border-radius: 6px;
+    padding: 10px 12px;
+    border: 1px solid #d9d9d9;
+  }
+  
+  .theatre-input:focus, .theatre-textarea:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+  }
+  
+  .theatre-input:hover, .theatre-textarea:hover {
+    border-color: #40a9ff;
+  }
+  
+  .theatre-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  
+  .submit-button {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    height: 40px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  .cancel-button {
+    height: 40px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  /* Delete Modal */
+  .delete-theatre-modal .ant-modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .delete-theatre-modal .ant-modal-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .delete-theatre-modal .ant-modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ff4d4f;
+  }
+  
+  .delete-theatre-modal .ant-modal-body {
+    padding: 24px;
+  }
+  
+  .delete-message {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .delete-warning {
+    font-size: 14px;
+    color: #ff4d4f;
+  }
+  
+  /* Show Modal */
+  .show-modal .ant-modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .show-modal .ant-modal-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .show-modal .ant-modal-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .show-modal .ant-modal-body {
+    padding: 24px;
+  }
+  
+  .show-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .show-header-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .show-table {
+    margin-bottom: 20px;
+  }
+  
+  .show-table .ant-table-thead > tr > th {
+    background-color: #f7f9fc;
+    font-weight: 600;
+    color: #333;
+    padding: 16px;
+  }
+  
+  .show-table .ant-table-tbody > tr > td {
+    padding: 16px;
+  }
+  
+  .show-form {
+    padding: 0;
+  }
+  
+  .show-form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 40px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .theatre-admin-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    
+    .add-theatre-button {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .theatre-form-actions {
+      flex-direction: column;
+    }
+    
+    .submit-button, .cancel-button {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .show-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    
+    .show-form-actions {
+      flex-direction: column;
+    }
+    
+    .back-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .partner-container {
+    padding: 24px;
+  }
+  
+  .partner-header-main {
+    margin-bottom: 24px;
+  }
+  
+  .partner-page-title {
+    font-weight: bold;
+  }
+  
+  .partner-tabs-container {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .partner-tab-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .custom-tabs .ant-tabs-tab {
+    font-size: 16px;
+  }

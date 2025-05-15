@@ -1,0 +1,275 @@
+/* Admin Dashboard Styles */
+.admin-container {
+  padding: 20px;
+  background-color: #f5f7fa;
+  height: auto;
+  min-height: auto;
+}
+
+.admin-header-main {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e6e9f0;
+  padding-bottom: 16px;
+}
+
+.admin-page-title {
+  color: #333;
+  margin-bottom: 0 !important;
+}
+
+.admin-tabs-container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.custom-tabs .ant-tabs-nav {
+  margin-bottom: 20px;
+}
+
+.admin-tab-label {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Content Container */
+.admin-content-container {
+  padding: 20px 0;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e9f0;
+}
+
+.admin-title {
+  margin: 0 !important;
+  color: #333;
+}
+
+.admin-table-container {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: visible;
+  height: auto;
+}
+
+/* Custom Table Styles */
+.custom-table .ant-table {
+  border-radius: 8px;
+  overflow: visible;
+}
+
+.custom-table .ant-table-thead > tr > th {
+  background-color: #f7f9fc;
+  font-weight: 600;
+  color: #333;
+  padding: 16px;
+}
+
+.custom-table .ant-table-tbody > tr > td {
+  padding: 16px;
+}
+
+.custom-table .ant-table-tbody > tr:hover > td {
+  background-color: #f0f7ff;
+}
+
+.custom-table .ant-pagination {
+    margin-top: 16px;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+  }
+  
+
+/* Buttons */
+.add-button {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  height: 40px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.add-button:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.action-button {
+  border-radius: 6px;
+  padding: 4px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  width: auto; /* ensure it wraps the content */
+}
+
+
+.edit-button {
+  color: #1890ff;
+  border-color: #1890ff;
+  background-color: #e6f4ff;
+}
+
+.delete-button {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+  background-color: #fff1f0;
+}
+
+.approve-button {
+  background-color: #52c41a;
+  border-color: #52c41a;
+}
+
+.block-button {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+/* Delete Modal */
+.custom-delete-modal .ant-modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.delete-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.warning-icon {
+  color: #ff4d4f;
+  font-size: 22px;
+}
+
+.delete-modal-content {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.delete-modal-message {
+  font-size: 16px;
+}
+
+.delete-modal-warning {
+  font-size: 14px;
+}
+
+/* Movie Form Modal */
+.custom-movie-form-modal .ant-modal-content {
+  border-radius: 12px;
+  overflow: visible;
+}
+
+.custom-movie-form-modal .ant-modal-body {
+  padding: 16px 24px;
+  max-height: none;
+  overflow: visible;
+}
+
+.movie-form-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.movie-form-icon {
+  color: #1890ff;  
+  font-size: 22px;
+}
+
+.custom-form {
+  padding: 10px 0;
+  max-height: none;
+  overflow: visible;
+}
+
+.form-item {
+  margin-bottom: 20px;
+}
+
+.custom-input, .custom-textarea, .custom-select {
+  border-radius: 6px;
+  padding: 10px 12px;
+  border: 1px solid #d9d9d9;
+}
+
+.custom-input:focus, .custom-textarea:focus, .custom-select:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+.custom-input:hover, .custom-textarea:hover, .custom-select:hover {
+  border-color: #40a9ff;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.submit-button {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  height: 40px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cancel-button {
+  height: 40px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .add-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .submit-button, .cancel-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

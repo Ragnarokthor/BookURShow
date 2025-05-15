@@ -1,0 +1,319 @@
+/* BookShow.css */
+
+.premium-book-show {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .premium-show-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+  }
+  
+  .premium-show-header {
+    padding: 24px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .premium-movie-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+  }
+  
+  .premium-theatre-info {
+    font-size: 16px;
+    opacity: 0.9;
+    margin: 8px 0 0;
+  }
+  
+  .premium-show-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .premium-show-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .premium-info-label {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+  
+  .premium-info-value {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .premium-booking-content {
+    padding: 24px;
+  }
+  
+  .premium-section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 12px;
+  }
+  
+  .premium-seat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .premium-screen-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+  
+  .premium-screen-text {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .premium-screen-div {
+    height: 15px;
+    background: linear-gradient(to bottom, #ffffff, #d1d1d1);
+    width: 100%;
+    transform: perspective(300px) rotateX(-10deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    border-radius: 3px;
+  }
+  
+  .premium-seats-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  
+  .premium-seat-grid {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .premium-seat-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .premium-seat-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .premium-seat-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .premium-seat-btn.selected {
+    background-color: #1890ff;
+    color: white;
+    border-color: #0076e4;
+    box-shadow: 0 2px 8px rgba(24, 144, 255, 0.3);
+  }
+  
+  .premium-seat-btn.booked {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+    color: #999;
+    border-color: #e0e0e0;
+    box-shadow: none;
+  }
+  
+  .premium-booking-summary {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .premium-summary-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+  }
+  
+  .premium-summary-label {
+    font-weight: 600;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .premium-summary-value {
+    font-weight: 500;
+    color: #1890ff;
+  }
+  
+  .premium-summary-item.total-price .premium-summary-value {
+    font-size: 18px;
+    color: #52c41a;
+  }
+  
+  .premium-legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0 30px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .premium-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .premium-legend-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .premium-legend-box.available {
+    background-color: #f8f8f8;
+  }
+  
+  .premium-legend-box.selected {
+    background-color: #1890ff;
+    border-color: #0076e4;
+  }
+  
+  .premium-legend-box.booked {
+    background-color: #f5f5f5;
+    border-color: #e0e0e0;
+  }
+  
+  .premium-payment-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .premium-stripe-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .premium-card-element-container {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+  }
+  
+  .premium-payment-error {
+    color: #d32f2f;
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .premium-payment-button-container {
+    max-width: 400px;
+    margin: 15px auto;
+  }
+  
+  .premium-payment-btn {
+    background: linear-gradient(135deg, #1890ff, #096dd9);
+    border: none;
+    height: 46px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .premium-payment-btn:hover {
+    background: linear-gradient(135deg, #40a9ff, #1890ff);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(24, 144, 255, 0.15);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .premium-show-header {
+      padding: 16px;
+    }
+    
+    .premium-movie-title {
+      font-size: 24px;
+    }
+    
+    .premium-booking-summary {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .premium-seat-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 12px;
+    }
+  
+    .premium-seat-row {
+      gap: 8px;
+    }
+    
+    .premium-legend {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
