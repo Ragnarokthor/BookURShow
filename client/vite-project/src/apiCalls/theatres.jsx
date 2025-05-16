@@ -2,7 +2,7 @@ import { axiosInstance } from ".";
 
 export const addTheatre = async (payload) => {
     try{
-        const response = await axiosInstance.post('http://localhost:8082/api/theatre/add-theatre', payload);
+        const response = await axiosInstance.post('/api/theatre/add-theatre', payload);
         return response.data;
     }catch(err){
         return err.response;
@@ -12,7 +12,7 @@ export const addTheatre = async (payload) => {
 // Get all theatres for the Admin route
 export const getAllTheatresForAdmin = async () => {
     try{
-        const response = await axiosInstance.get('http://localhost:8082/api/theatre/get-all-theatres');
+        const response = await axiosInstance.get('/api/theatre/get-all-theatres');
         return response.data;
     }catch(err){
         return err.response;
@@ -22,7 +22,7 @@ export const getAllTheatresForAdmin = async () => {
 // Get theatres of a specific owner
 export const getAllTheatres = async (payload) => {
     try{
-        const response = await axiosInstance.post('http://localhost:8082/api/theatre/get-all-theatres-by-owner', payload);
+        const response = await axiosInstance.post('/api/theatre/get-all-theatres-by-owner', payload);
         return response.data;
     }catch(err){
         return err.response;
@@ -32,7 +32,7 @@ export const getAllTheatres = async (payload) => {
 // Update Theatre
 export const updateTheatre = async (payload) => {
     try{
-        const response = await axiosInstance.put('http://localhost:8082/api/theatre/update-theatre', payload);
+        const response = await axiosInstance.put('/api/theatre/update-theatre', payload);
         return response.data;
     }catch(err){
         return err.resposne;
@@ -42,7 +42,7 @@ export const updateTheatre = async (payload) => {
 // Delete Theatre
 export const deleteTheatre = async (payload) => {
     try{
-        const response = await axiosInstance.put('http://localhost:8082/api/theatre/delete-theatre', payload);
+        const response = await axiosInstance.put('/api/theatre/delete-theatre', payload);
         return response.data;        
     }catch(err){
         return err.response;
