@@ -15,7 +15,7 @@ const bookingRoute = require('./routes/bookingRoute');
 
 // --- CORS Setup ---
 const allowedOrigins = [
-  'https://book-ur-show-eight.vercel.app/login', // ✅ Replace this with your actual deployed frontend URL
+  'https://book-ur-show-git-main-kaushik-gowdas-projects.vercel.app', // ✅ Replace this with your actual deployed frontend URL
   'http://localhost:5173' // optional, useful for local development
 ];
 
